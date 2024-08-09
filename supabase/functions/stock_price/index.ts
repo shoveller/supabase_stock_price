@@ -3,10 +3,12 @@
 // This enables autocomplete, go to definition, etc.
 
 // Setup type definitions for built-in Supabase Runtime APIs
-// import "@supabase/functions-js/edge-runtime.d.ts"
-// import "@supabase/supabase-js";
+import "@supabase/functions-js"
+import { supabase } from '../_shared/client.ts'
+import _ from 'lodash'
 
 Deno.serve(async (req) => {
+  console.log(_.isEmpty(supabase))
   const { symbol } = await req.json()
   const data = {
     [symbol]: `123.456`,

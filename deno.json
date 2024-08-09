@@ -1,8 +1,13 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "deno.ns"]
+    "lib": [
+      "dom",
+      "deno.ns"
+    ]
   },
   "imports": {
-    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.45.1"
+    "@supabase/functions-js": "jsr:@supabase/functions-js@^2.4.3",
+    "@supabase/supabase-js": "jsr:@supabase/supabase-js@^2.45.1",
+    "lodash": "npm:lodash@^4.17.21"
   }
 }

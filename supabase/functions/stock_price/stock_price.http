@@ -11,7 +11,7 @@ POST https://esawdtpiauocuvyjziif.supabase.co/functions/v1/stock_price
 Content-Type: application/json
 
 {
-  "symbol": "samsung"
+  "symbol": "twitter"
 }
 
 ###

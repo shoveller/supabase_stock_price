@@ -200,3 +200,9 @@ s3_region = "env(S3_REGION)"
 s3_access_key = "env(S3_ACCESS_KEY)"
 # Configures AWS_SECRET_ACCESS_KEY for S3 bucket
 s3_secret_key = "env(S3_SECRET_KEY)"
+
+[functions.stock_price]
+# jwt 토큰이 없어도 실행할 수 있게 한다
+verify_jwt = false
+# import map 을 지정한다
+import_map = '../deno.json'
